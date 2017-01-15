@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EAFD1F8B5DC37B3D150A0212 /* Pods_ZONE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EAA74FFFBDBF978B3A03D0 /* Pods_ZONE.framework */; };
-		EF3F2C501E2650E600478BF0 /* ZReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F2C4F1E2650E600478BF0 /* ZReadViewController.swift */; };
-		EF3F2C521E26528100478BF0 /* ZReadTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F2C511E26528100478BF0 /* ZReadTableCell.swift */; };
-		EF3F2C541E26580C00478BF0 /* ZReadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F2C531E26580C00478BF0 /* ZReadModel.swift */; };
 		EF3F2C561E265C1A00478BF0 /* ZBaseNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F2C551E265C1A00478BF0 /* ZBaseNetWorkManager.swift */; };
 		EF3F2C5A1E2678BF00478BF0 /* ZResposeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F2C591E2678BF00478BF0 /* ZResposeModel.swift */; };
 		EF3F2C5C1E267C9100478BF0 /* ZAPIMarco.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F2C5B1E267C9100478BF0 /* ZAPIMarco.swift */; };
@@ -46,14 +43,16 @@
 		EF6095611E1251500087E56D /* ZHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6095601E1251500087E56D /* ZHomeViewController.swift */; };
 		EF6095631E1253450087E56D /* ZRectMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6095621E1253450087E56D /* ZRectMacro.swift */; };
 		EF6095671E127B3A0087E56D /* ZHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6095661E127B3A0087E56D /* ZHomeModel.swift */; };
-		EF6095691E127D390087E56D /* ZHomeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6095681E127D390087E56D /* ZHomeDataModel.swift */; };
 		EF60956C1E1280390087E56D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF60956B1E1280390087E56D /* SwiftyJSON.swift */; };
 		EF658BBD1E1D1EFA009E97DC /* ZHomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF658BBC1E1D1EFA009E97DC /* ZHomeTableCell.swift */; };
 		EF6C7B0C1E13618200B6BBC4 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6C7B0B1E13618200B6BBC4 /* UIViewExtension.swift */; };
 		EFBB189E1E27B29000D1DB0C /* ZNSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB189D1E27B29000D1DB0C /* ZNSObject+Extension.swift */; };
-		EFBB18A01E27C45900D1DB0C /* ZAuthorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB189F1E27C45900D1DB0C /* ZAuthorModel.swift */; };
 		EFBB18E11E2BC62E00D1DB0C /* ZHomeNetTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB18DE1E2BC62E00D1DB0C /* ZHomeNetTool.swift */; };
 		EFBB18E21E2BC62E00D1DB0C /* ZReadNetTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB18E01E2BC62E00D1DB0C /* ZReadNetTool.swift */; };
+		EFBB18EB1E2BC7BB00D1DB0C /* ZReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB18E51E2BC7BB00D1DB0C /* ZReadViewController.swift */; };
+		EFBB18EC1E2BC7BB00D1DB0C /* ZAuthorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB18E71E2BC7BB00D1DB0C /* ZAuthorModel.swift */; };
+		EFBB18ED1E2BC7BB00D1DB0C /* ZReadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB18E81E2BC7BB00D1DB0C /* ZReadModel.swift */; };
+		EFBB18EE1E2BC7BB00D1DB0C /* ZReadTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB18EA1E2BC7BB00D1DB0C /* ZReadTableCell.swift */; };
 		EFE723941E1294CB006E0338 /* ZModelKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE723931E1294CB006E0338 /* ZModelKeys.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,9 +77,6 @@
 		74A943BCBA1D48375AC88CE0 /* Pods-ZONE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZONE.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZONE/Pods-ZONE.release.xcconfig"; sourceTree = "<group>"; };
 		95CCBCFE6111C2FEC65F444A /* Pods-ZONE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZONE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZONE/Pods-ZONE.debug.xcconfig"; sourceTree = "<group>"; };
 		D6EAA74FFFBDBF978B3A03D0 /* Pods_ZONE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZONE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF3F2C4F1E2650E600478BF0 /* ZReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZReadViewController.swift; sourceTree = "<group>"; };
-		EF3F2C511E26528100478BF0 /* ZReadTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZReadTableCell.swift; sourceTree = "<group>"; };
-		EF3F2C531E26580C00478BF0 /* ZReadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZReadModel.swift; sourceTree = "<group>"; };
 		EF3F2C551E265C1A00478BF0 /* ZBaseNetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZBaseNetWorkManager.swift; sourceTree = "<group>"; };
 		EF3F2C591E2678BF00478BF0 /* ZResposeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZResposeModel.swift; sourceTree = "<group>"; };
 		EF3F2C5B1E267C9100478BF0 /* ZAPIMarco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAPIMarco.swift; sourceTree = "<group>"; };
@@ -142,15 +138,17 @@
 		EF6095601E1251500087E56D /* ZHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHomeViewController.swift; sourceTree = "<group>"; };
 		EF6095621E1253450087E56D /* ZRectMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZRectMacro.swift; sourceTree = "<group>"; };
 		EF6095661E127B3A0087E56D /* ZHomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHomeModel.swift; sourceTree = "<group>"; };
-		EF6095681E127D390087E56D /* ZHomeDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHomeDataModel.swift; sourceTree = "<group>"; };
 		EF60956A1E1280390087E56D /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
 		EF60956B1E1280390087E56D /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		EF658BBC1E1D1EFA009E97DC /* ZHomeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHomeTableCell.swift; sourceTree = "<group>"; };
 		EF6C7B0B1E13618200B6BBC4 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		EFBB189D1E27B29000D1DB0C /* ZNSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZNSObject+Extension.swift"; sourceTree = "<group>"; };
-		EFBB189F1E27C45900D1DB0C /* ZAuthorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAuthorModel.swift; sourceTree = "<group>"; };
 		EFBB18DE1E2BC62E00D1DB0C /* ZHomeNetTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHomeNetTool.swift; sourceTree = "<group>"; };
 		EFBB18E01E2BC62E00D1DB0C /* ZReadNetTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZReadNetTool.swift; sourceTree = "<group>"; };
+		EFBB18E51E2BC7BB00D1DB0C /* ZReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZReadViewController.swift; sourceTree = "<group>"; };
+		EFBB18E71E2BC7BB00D1DB0C /* ZAuthorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAuthorModel.swift; sourceTree = "<group>"; };
+		EFBB18E81E2BC7BB00D1DB0C /* ZReadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZReadModel.swift; sourceTree = "<group>"; };
+		EFBB18EA1E2BC7BB00D1DB0C /* ZReadTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZReadTableCell.swift; sourceTree = "<group>"; };
 		EFE723931E1294CB006E0338 /* ZModelKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZModelKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -390,6 +388,7 @@
 		EF60954C1E1246A20087E56D /* sections(模块) */ = {
 			isa = PBXGroup;
 			children = (
+				EFBB18E31E2BC7BB00D1DB0C /* Read(阅读) */,
 				EF60954D1E1246A20087E56D /* Home(首页) */,
 			);
 			path = "sections(模块)";
@@ -409,7 +408,6 @@
 			isa = PBXGroup;
 			children = (
 				EF6095601E1251500087E56D /* ZHomeViewController.swift */,
-				EF3F2C4F1E2650E600478BF0 /* ZReadViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -418,9 +416,6 @@
 			isa = PBXGroup;
 			children = (
 				EF6095661E127B3A0087E56D /* ZHomeModel.swift */,
-				EF6095681E127D390087E56D /* ZHomeDataModel.swift */,
-				EF3F2C531E26580C00478BF0 /* ZReadModel.swift */,
-				EFBB189F1E27C45900D1DB0C /* ZAuthorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -429,7 +424,6 @@
 			isa = PBXGroup;
 			children = (
 				EF658BBC1E1D1EFA009E97DC /* ZHomeTableCell.swift */,
-				EF3F2C511E26528100478BF0 /* ZReadTableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -478,6 +472,41 @@
 				EFBB18E01E2BC62E00D1DB0C /* ZReadNetTool.swift */,
 			);
 			path = "Read(阅读)";
+			sourceTree = "<group>";
+		};
+		EFBB18E31E2BC7BB00D1DB0C /* Read(阅读) */ = {
+			isa = PBXGroup;
+			children = (
+				EFBB18E41E2BC7BB00D1DB0C /* Controller */,
+				EFBB18E61E2BC7BB00D1DB0C /* Model */,
+				EFBB18E91E2BC7BB00D1DB0C /* View */,
+			);
+			path = "Read(阅读)";
+			sourceTree = "<group>";
+		};
+		EFBB18E41E2BC7BB00D1DB0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFBB18E51E2BC7BB00D1DB0C /* ZReadViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFBB18E61E2BC7BB00D1DB0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFBB18E71E2BC7BB00D1DB0C /* ZAuthorModel.swift */,
+				EFBB18E81E2BC7BB00D1DB0C /* ZReadModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFBB18E91E2BC7BB00D1DB0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFBB18EA1E2BC7BB00D1DB0C /* ZReadTableCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -674,12 +703,12 @@
 				EF3F2C9A1E2687B400478BF0 /* UIScrollView+MJExtension.m in Sources */,
 				EF3F2C8F1E2687B400478BF0 /* MJRefreshAutoGifFooter.m in Sources */,
 				EF3F2C5C1E267C9100478BF0 /* ZAPIMarco.swift in Sources */,
-				EFBB18A01E27C45900D1DB0C /* ZAuthorModel.swift in Sources */,
 				EFBB18E11E2BC62E00D1DB0C /* ZHomeNetTool.swift in Sources */,
 				EFBB18E21E2BC62E00D1DB0C /* ZReadNetTool.swift in Sources */,
 				EF6095671E127B3A0087E56D /* ZHomeModel.swift in Sources */,
 				EFBB189E1E27B29000D1DB0C /* ZNSObject+Extension.swift in Sources */,
 				EF3F2C901E2687B400478BF0 /* MJRefreshAutoNormalFooter.m in Sources */,
+				EFBB18EC1E2BC7BB00D1DB0C /* ZAuthorModel.swift in Sources */,
 				EFE723941E1294CB006E0338 /* ZModelKeys.swift in Sources */,
 				EF6095591E12471C0087E56D /* ZBaseViewController.swift in Sources */,
 				EF60956C1E1280390087E56D /* SwiftyJSON.swift in Sources */,
@@ -691,7 +720,8 @@
 				EF6095531E1246A20087E56D /* AppDelegate.swift in Sources */,
 				EF3F2C921E2687B400478BF0 /* MJRefreshBackGifFooter.m in Sources */,
 				EF3F2C8A1E2687B400478BF0 /* MJRefreshAutoFooter.m in Sources */,
-				EF3F2C541E26580C00478BF0 /* ZReadModel.swift in Sources */,
+				EFBB18EE1E2BC7BB00D1DB0C /* ZReadTableCell.swift in Sources */,
+				EFBB18EB1E2BC7BB00D1DB0C /* ZReadViewController.swift in Sources */,
 				EF3F2C8B1E2687B400478BF0 /* MJRefreshBackFooter.m in Sources */,
 				EF3F2C5A1E2678BF00478BF0 /* ZResposeModel.swift in Sources */,
 				EF3F2C9F1E26880600478BF0 /* UIView+MJExtension.m in Sources */,
@@ -699,16 +729,14 @@
 				EF658BBD1E1D1EFA009E97DC /* ZHomeTableCell.swift in Sources */,
 				EF3F2C951E2687B400478BF0 /* MJRefreshGifHeader.m in Sources */,
 				EF3F2C911E2687B400478BF0 /* MJRefreshAutoStateFooter.m in Sources */,
+				EFBB18ED1E2BC7BB00D1DB0C /* ZReadModel.swift in Sources */,
 				EF6095571E1247090087E56D /* ZBaseTabBarController.swift in Sources */,
 				EF6C7B0C1E13618200B6BBC4 /* UIViewExtension.swift in Sources */,
-				EF6095691E127D390087E56D /* ZHomeDataModel.swift in Sources */,
 				EF60955F1E124CB70087E56D /* ZColorMacros.swift in Sources */,
 				EF3F2C8E1E2687B400478BF0 /* MJRefreshHeader.m in Sources */,
-				EF3F2C521E26528100478BF0 /* ZReadTableCell.swift in Sources */,
 				EF3F2C971E2687B400478BF0 /* MJRefreshStateHeader.m in Sources */,
 				EF3F2C941E2687B400478BF0 /* MJRefreshBackStateFooter.m in Sources */,
 				EF3F2C991E2687B400478BF0 /* MJRefreshConst.m in Sources */,
-				EF3F2C501E2650E600478BF0 /* ZReadViewController.swift in Sources */,
 				EF6095551E1246CA0087E56D /* ZBaseNavigationController.swift in Sources */,
 				EF3F2C8D1E2687B400478BF0 /* MJRefreshFooter.m in Sources */,
 			);

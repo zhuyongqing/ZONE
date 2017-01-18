@@ -26,7 +26,7 @@ class ZReadTableCell: UITableViewCell {
     var content_label:UILabel!;
     var readImage_imageV:UIImageView!;
     var bottomLine_view:UIView!;
-    
+    public var cellHeight:CGFloat?;
     
     public var readModel:ZReadModel?{
         
@@ -49,14 +49,30 @@ class ZReadTableCell: UITableViewCell {
             
             attr.addAttribute(NSParagraphStyleAttributeName, value: para, range: NSMakeRange(0, (readModel?.forward?.characters.count)!));
             
+//            let nsStr = (readModel?.forward)! as NSString;
+//            let rect =  nsStr.boundingRect(with: CGSize.init(width: kImageW, height: 300), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName:UIFont.systemFont(ofSize: 14),NSParagraphStyleAttributeName:para], context: nil);
+            
+            
             content_label.attributedText = attr;
             content_label.sizeToFit();
             
             readImage_imageV.af_setImage(withURL: NSURL.init(string: (readModel?.img_url)!) as! URL);
-                        
+            
         }
         
     }
+    
+    //获取cell的高度
+    public func getCellHeight() -> Void{
+        
+        if ( Int((readModel?.cellHeight)!) > 0) {
+            return;
+        }
+        layoutIfNeeded();
+        
+        readModel?.cellHeight = bottomLine_view._bottom;
+    }
+    
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier);
@@ -106,8 +122,8 @@ class ZReadTableCell: UITableViewCell {
         
         //布局
         
-        let style = style_label;
-        style?.snp.makeConstraints({ (make) in
+        let styles = style_label!;
+        styles.snp.makeConstraints({ (make) in
             
             make.top.equalTo(contentView).offset(kMargin);
             make.centerX.equalTo(contentView);
@@ -118,9 +134,9 @@ class ZReadTableCell: UITableViewCell {
         let title = title_label!;
         title.snp.makeConstraints { (make) in
             
-            make.top.equalTo((style?.snp.bottom)!).offset(kMargin*2)
+            make.top.equalTo(styles.snp.bottom).offset(kMargin*2)
             make.width.equalTo(kImageW);
-            make.centerX.equalTo(contentView);
+            make.centerX.equalTo(styles);
         }
         
         let line = line_view!;
@@ -148,9 +164,9 @@ class ZReadTableCell: UITableViewCell {
             
             make.top.equalTo(author.snp.bottom).offset(20);
             make.left.equalTo(title);
-            make.right.equalTo(title);
-            
+            make.width.equalTo(kImageW);
         }
+        content_label.preferredMaxLayoutWidth = kImageW;
         
         let imageV = readImage_imageV!;
         
@@ -167,15 +183,14 @@ class ZReadTableCell: UITableViewCell {
             
             make.top.equalTo(imageV.snp.bottom).offset(40);
             make.width.equalTo(KWidth);
-            make.centerX.equalTo(content);
+            make.left.equalTo(0);
             make.height.equalTo(kMargin);
-            make.bottom.equalTo(contentView).offset(0);
         }
-        
-        
-        
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews();
+    }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

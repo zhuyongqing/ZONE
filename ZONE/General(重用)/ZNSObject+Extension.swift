@@ -112,7 +112,8 @@ extension NSObject{
          var count: UInt32 = 0
     
         var properties:[String] = [];
-        
+    
+    
         let propertyList = class_copyPropertyList(self.classForCoder(), &count);
         
         for j in 0..<numericCast(count){
@@ -121,7 +122,6 @@ extension NSObject{
             let property = property_getName(prop);
             
             properties.append(String.init(cString: property!));
-            
         }
         
         free(propertyList);

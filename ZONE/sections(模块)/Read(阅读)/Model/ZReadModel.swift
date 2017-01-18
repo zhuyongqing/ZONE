@@ -49,6 +49,14 @@ class ZReadModel: NSObject {
     var pic_info:String?;
     var tag_list:[String]?;
     var authos:[ZAuthorModel]?;
+    var cellHeight:CGFloat = 0;
+    
+    public func getCellHeight() -> (){
+        
+        
+        
+    }
+    
     
     override class func replaceKeyWithClass() -> [String:AnyClass]{
         

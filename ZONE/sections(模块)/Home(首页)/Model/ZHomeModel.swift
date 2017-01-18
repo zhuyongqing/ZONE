@@ -35,7 +35,7 @@ class ZHomeModel: NSObject {
     var maketime:String?;
     var share_list:[String:Any]?;
     var id:String?;
-    var cellHeight:CGFloat?;
+    var cellHeight:CGFloat = 0;
     
     
     

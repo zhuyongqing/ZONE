@@ -895,7 +895,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.z.com.ZONE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhuyongqing/Documents/WorkSpace/ZONE/ZONE/object-c_bridge.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhuyongqing/Documents/WorkSpace/ZONE_git/ZONE/object-c_bridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -911,7 +911,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.z.com.ZONE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhuyongqing/Documents/WorkSpace/ZONE/ZONE/object-c_bridge.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhuyongqing/Documents/WorkSpace/ZONE_git/ZONE/object-c_bridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

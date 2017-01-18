@@ -37,6 +37,17 @@ class ZHomeTableCell: UITableViewCell {
         
     };
     
+    public func getCellHeight() -> Void{
+        
+        if Int((homeModel?.cellHeight)!) > 0 {
+            return;
+        }
+        
+        layoutIfNeeded();
+        
+        homeModel?.cellHeight = (lineView?._bottom)!;
+    }
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier);
         
@@ -99,16 +110,7 @@ class ZHomeTableCell: UITableViewCell {
             make.width.equalTo(KWidth);
             make.height.equalTo(10);
             make.centerX.equalTo(content);
-            make.bottom.equalTo(contentView).offset(0);
         }
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews();
-        
-        let cellHeight = lineView?._bottom;
-        
-        self.homeModel?.cellHeight = cellHeight;
     }
     
     required init?(coder aDecoder: NSCoder) {

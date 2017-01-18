@@ -84,12 +84,14 @@ class ZHomeViewController: ZBaseViewController,UITableViewDelegate,UITableViewDa
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-//        let model = self.datas[indexPath.row];
-//        if  let cellHeight = model.cellHeight {
-//            return Int(cellHeight)>0 ? model.cellHeight! : UITableViewAutomaticDimension;
-//        }else{
-            return UITableViewAutomaticDimension;
-//        }
+        var cell:ZHomeTableCell? = tableView.dequeueReusableCell(withIdentifier: cellID) as? ZHomeTableCell;
+        if cell == nil {
+            cell = ZHomeTableCell.init(style: .default, reuseIdentifier: cellID);
+        }
+        cell?.homeModel = self.datas[indexPath.row];
+        cell?.getCellHeight();
+        
+        return (cell?.homeModel?.cellHeight)!;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
